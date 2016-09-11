@@ -1,0 +1,18 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Ellison Homestead — Our family's journey to living a more simple  and sustainable life whilst trying to serve the world's deepest needs
+email: john@john-ellison.com
+description: In 2016 John and Sophie Ellison decided to start a smallholding outside Norwich, Norfolk in the UK. This website shares their learning, hardship and triumphs.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://ellisonhomestead.com" # the base hostname & protocol for your site
+twitter_username: iamjohnellison
+github_username:  johnellison
+
+# Build settings
+markdown: kramdown
