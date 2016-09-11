@@ -25,8 +25,11 @@ markdown: kramdown
 mail: john@john-ellison.com
 description: In 2016 John and Sophie Ellison decided to start a smallholding outside
   Norwich, Norfolk in the UK. This website shares their learning, hardship and triumphs.
-baseurl: ''
+baseurl: 
 url: http://ellisonhomestead.com
 twitter_username: iamjohnellison
 github_username: johnellison
 permalink: pretty
+gems:
+- jekyll-sitemap
+- 
