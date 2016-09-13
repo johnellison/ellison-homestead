@@ -28,3 +28,6 @@ include: ["_pages"]
 markdown: kramdown
 baseurl: ''
 permalink: pretty
+gems:
+- jekyll-sitemap
+-
