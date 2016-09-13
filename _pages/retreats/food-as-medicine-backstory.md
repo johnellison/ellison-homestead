@@ -1,10 +1,9 @@
 ---
-title: Food as Medicine Backstory
+title: 'Food as Medicine: Backstory'
 permalink: "/retreats/food-as-medicine/backstory/"
 layout: page
 ---
 
-# Food as Medicine Backstory
 My mother Sarah taught me how to walk, play soccer and ski. Once able-bodied, she became dependent on walking aids and eventually a wheelchair. After trying dozens of treatments, we discovered [The Wahls Protocol](http://terrywahls.com/about-the-wahls-protocol/): A clinically-tested approach to treating MS and other autoimmune diseases. The outcome of this protocol changed our family's life forever.
 
 ## My Mother's Experience with The Wahls Protocol
