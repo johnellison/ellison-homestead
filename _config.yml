@@ -1,9 +1,5 @@
 ---
 title: Ellison Homestead
-description: We've decided to pursue our dream of living a more simple and sustainable life whilst serving some of the world's deepest needs.
-url: http://ellisonhomestead.com
-twitter_username: iamjohnellison
-email: john@john-ellison.com
 timezone: UTC
 collections:
   posts:
@@ -24,10 +20,16 @@ defaults:
     type: pages
   values:
     layout: page
-include: ["_pages"]
+description: We've decided to pursue our dream of living a more simple and sustainable
+  life whilst serving some of the world's deepest needs.
+url: http://ellisonhomestead.com
+twitter_username: iamjohnellison
+email: john@john-ellison.com
+include:
+- _pages
 markdown: kramdown
 baseurl: ''
 permalink: pretty
 gems:
 - jekyll-sitemap
--
+- 
