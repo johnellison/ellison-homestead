@@ -1,5 +1,5 @@
 ---
-title: "Food as Medicine: Backstory"
+title: 'Food as Medicine: Backstory'
 permalink: "/retreats/food-as-medicine/backstory/"
 layout: page
 ---
