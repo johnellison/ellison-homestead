@@ -8,6 +8,8 @@ layout: page
 
 A residential retreat for people with MS and other autoimmune disorders who want to invest in their health and quality of life through diet and specialised rehabilitation.
 
+[Read the backstory](/retreats/food-as-medicine/backstory/)
+
 ---
 
 ## How Does It Work?
