@@ -1,6 +1,5 @@
 ---
-title: Ellison Homestead — Our family's journey to living a more simple  and sustainable
-  life whilst trying to serve the world's deepest needs
+title: Ellison Homestead
 timezone: UTC
 collections:
   posts:
@@ -21,14 +20,15 @@ defaults:
     type: pages
   values:
     layout: page
-markdown: kramdown
-mail: john@john-ellison.com
-description: In 2016 John and Sophie Ellison decided to start a smallholding outside
-  Norwich, Norfolk in the UK. This website shares their learning, hardship and triumphs.
-baseurl: 
+description: We've decided to pursue our dream of living a more simple and sustainable
+  life whilst serving some of the world's deepest needs.
 url: http://ellisonhomestead.com
 twitter_username: iamjohnellison
-github_username: johnellison
+email: john@john-ellison.com
+include:
+- _pages
+markdown: kramdown
+baseurl: ''
 permalink: pretty
 gems:
 - jekyll-sitemap
