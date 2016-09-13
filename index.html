@@ -1,23 +1,117 @@
 ---
+title: Home
 layout: default
 ---
 
 <div class="home">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<hr>
+<br>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<h2>Who We Are</h2>
+<img src="http://placehold.it/900x600" alt="John and Sophie Ellison">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<p>We're John and Sophie Ellison.</p>
+
+<hr>
+<br>
+
+<h2>What We Do</h2>
+<ul>
+  <img src="http://placehold.it/600x400" alt="retreats">
+  <h3>Retreats</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptate! Ea quae harum autem suscipit mollitia dolore placeat illo laboriosam blanditiis consectetur, debitis unde nostrum tempore, nam quasi dolorem sapiente!</p>
+  <ul>
+    <li><a href="{{ "/retreats/food-as-medicine/" | prepend: site.baseurl }}">Food as Medicine</a> &mdash; for people with MS and other autoimmune conditions</li>
+    <li><a href="{{ "/retreats/take-refuge/" | prepend: site.baseurl }}">Take Refuge</a> &mdash; for asylum seekers and their support workers</li>
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <br>
 
-</div>
+  <img src="http://placehold.it/600x400" alt="bed and breakfasts">
+  <h3>Bed and Breakfasts</h3>
+  <p>
+    Come and stay on our homestead in a private straw bale home. Fresh organic eggs and goats milk provided each morning for breakfast! We're in a wonderful location, just 20 minutes from the historic city of Norwich.
+  </p>
+  <ul>
+    <li>Pickles Chalet</li>
+    <li>Bumbles Cottage</li>
+    <li>Swixley Cabin</li>
+    <li>Tiverton Lodge</li>
+  </ul>
+
+  <a href="javascript:void()" class="button">Reserve Your Stay...</a>
+
+  <hr>
+  <br>
+
+  <img src="http://placehold.it/600x400" alt="organic homesteading">
+  <h3>Organic Homesteading</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit odit soluta necessitatibus, eveniet consequuntur amet vero deserunt inventore molestiae, harum facilis earum, sit dolor cupiditate error accusamus reiciendis natus quo!</p>
+
+  <h4>Current Projects</h4>
+  <ul>
+    <li>Vegetables &amp; Herbs</li>
+    <li>Chickens</li>
+    <li>Waterfowl</li>
+    <li>Goats</li>
+    <li>Bees</li>
+  </ul>
+
+<hr>
+<br>
+
+<h2>Our Story</h2>
+<img src="http://placehold.it/900x600" alt="Meeting in a kibbutz in Israel">
+
+<p>
+  We met volunteering on a kibbutz in Israel in 2011. Since then we've been on adventures together all over the world. From starting grassroots recycling initiatives in Egypt to designing and building classrooms for children with special needs in India, our passions have propelled us and sometimes crippled us.
+</p>
+<p>
+  When Sophie caught Typhoid in India, we were frustrated because it put a hault on our plans for a long-term project. At the time, we neglected to consider the gravity of the illness and treated it like any old virus or flu. What we didn't know was that our naive approach would begin a three-year journey through chronic illness, into autoimmunity and horrible health.
+</p>
+<p>
+  As is often the case with conflict, we arrived at a perspective of redemption after a long trial of pain and hardship.
+</p>
+<a href="/our-story/">Read More...</a>
+
+<hr><br>
+
+<h2>Blog</h2>
+<ul class="post-list">
+  {% for post in site.posts limit:5 %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>
+
+<hr>
+<br>
+
+<h2>Get In Touch</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quam fuga amet repudiandae, dignissimos cupiditate accusantium earum, provident placeat magni esse, harum assumenda recusandae quidem doloribus sunt quis odio soluta.</p>
+<form action="#">
+  <label for="name">My name is
+  <br>
+  <input type="text" name="name"></label>
+  <br>
+  <label for="email">and my email is
+  <br>
+  <input type="email"></label>
+  <br>
+  <label for="message">I'd like to talk to you about
+  <br>
+  <textarea name="message" id=""></textarea></label>
+  <br>
+  <input type="submit">
+</form>
+<hr>
+<br>
