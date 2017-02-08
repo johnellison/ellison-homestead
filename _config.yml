@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  events:
+    title: Events
+    output: true
 defaults:
 - scope:
     path: ''
@@ -20,6 +23,13 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: events
+  values:
+    layout: page
+    # date:
+    # location:
 description: We're The Ellisons, a young couple who have decided to pursue our dream
   of living a more simple and sustainablelife whilst serving some of the world's deepest
   needs.
@@ -33,4 +43,4 @@ baseurl: ''
 permalink: pretty
 gems:
 - jekyll-sitemap
-- 
+-
