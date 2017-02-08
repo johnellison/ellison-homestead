@@ -2,14 +2,14 @@
 title: Ellison Homestead
 timezone: UTC
 collections:
+  events:
+    title: Events
+    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
-    output: true
-  events:
-    title: Events
     output: true
 defaults:
 - scope:
