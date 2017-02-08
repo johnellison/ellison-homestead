@@ -2,6 +2,9 @@
 title: Ellison Homestead
 timezone: UTC
 collections:
+  events:
+    title: Events
+    output: true
   posts:
     title: Posts
     output: true
@@ -20,8 +23,14 @@ defaults:
     type: pages
   values:
     layout: page
-description: We've decided to pursue our dream of living a more simple and sustainable
-  life whilst serving some of the world's deepest needs.
+- scope:
+    path: ''
+    type: events
+  values:
+    layout: page
+description: We're The Ellisons, a young couple who have decided to pursue our dream
+  of living a more simple and sustainablelife whilst serving some of the world's deepest
+  needs.
 url: http://ellisonhomestead.com
 twitter_username: iamjohnellison
 email: john@john-ellison.com
