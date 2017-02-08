@@ -1,0 +1,39 @@
+---
+title: Events
+layout: default
+permalink: '/events/'
+---
+
+<article role="main" class="home">
+  <section class="welcome">
+    <div class="marquee--secondary" id="events">
+      <div class="marquee__content">
+        <div class="row">
+          <div class="small-11 small-centered column">
+            <h1>Events</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-11 medium-9 medium-offset-2 small-centered column">
+            <h2 class="subheader">We are passionate about engaging with our community and often hold events on our homestead. Feel free to check out the upcoming events below.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="upcoming-events">
+    {% for event in site.events %}
+      <div class="teaser-box">
+           <h2>{{ event.title }}</h2>
+        <div class="teaser-box__content">
+          <p>{{ event.description }}</p>
+
+          <a href="{{event.url}}" class="button">learn more</a>
+        </div>
+        <div class="teaser-box__photo">
+          <!-- <img src="{{event.image.file}}" alt="{{event.image.caption}}"> -->
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+</article>

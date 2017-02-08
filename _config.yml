@@ -28,6 +28,7 @@ defaults:
     type: events
   values:
     layout: page
+    # image:
     # date:
     # location:
 description: We're The Ellisons, a young couple who have decided to pursue our dream
