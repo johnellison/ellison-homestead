@@ -20,7 +20,9 @@ defaults:
     type: pages
   values:
     layout: page
-description: "We're The Ellisons, a young couple who have decided to pursue our dream of living a more simple and sustainablelife whilst serving some of the world's deepest needs."
+description: We're The Ellisons, a young couple who have decided to pursue our dream
+  of living a more simple and sustainablelife whilst serving some of the world's deepest
+  needs.
 url: http://ellisonhomestead.com
 twitter_username: iamjohnellison
 email: john@john-ellison.com
@@ -31,4 +33,4 @@ baseurl: ''
 permalink: pretty
 gems:
 - jekyll-sitemap
--
+- 
