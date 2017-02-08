@@ -3,115 +3,176 @@ title: Home
 layout: default
 ---
 
-<div class="home">
-  <h1>{{ site.title }}</h1>
-  <p>{{ site.description }}</p>
-</div>
+<article role="main" class="home">
+  <section class="welcome">
+    <div class="marquee" id="home">
+      <div class="marquee__content">
+        <h1>Join Us</h1>
+        <h2 class="subheader">{{ site.description }}</h2>
+      </div>
+      <a class="scroll-cta" href="#story"></a>
+    </div>
+  </section>
+  <section class="story">
+    <div class="story-box" id="story">
+      <div class="story-box__content">
+        <p class="typl8-drop-cap">
+          We met volunteering on a kibbutz in Israel in 2011. Since then we've followed our passion to help make the world a better place. From starting grassroots recycling initiatives in Egypt to designing and building classrooms for children with special needs in India, we've been blessed with a life worth living and want to help provide others with the same.
+        </p>
+        <p>
+          When Sophie caught Typhoid in India it began a three-year journey of chronic illness. After seeing dozens of traditional doctors, being prescribed several courses of antibiotics&mdash;her health just kept getting worse and we determined to find another way...
+        </p>
+        <a href="/our-story.html">Read more...</a>
+      </div>
+    </div>
+  </section>
 
-<hr>
-<br>
+  <section class="events">
+    <h2>Events</h2>
+    <div class="teaser-box">
+      <div class="teaser-box__content">
+        <h3>Open House</h3>
+        <p>
+          This spring we'll be holding an open house to welcome the local community into our homestead to celebrate the start of a new growing season and a new family in the area. There will be a free barbeque with plenty to go around. If you're planning on coming, please bring some drinks and sides to share.
+        </p>
+        <a href="/events/open-house-spring-2017.html" class="button">learn more</a>
+      </div>
+      <div class="teaser-box__photo">
+        <img src="/assets/img/paleo-mealx960.jpg" alt="photo of a paleo meal at Ellison Homestead">
+      </div>
+    </div>
+    <div class="teaser-box">
+      <div class="teaser-box__content">
+        <h3>Spring Kick-off Workshop</h3>
+        <p>
+          If you're interested in living on the land in community with others, please feel free to attend our spring kick-off workshop. We'll be hosting a local charity called New Routes that provides integration support for asylum seekers in Norwich. Following in the tradition of The Grange, we'll have a weekly volunteer day every Wednesday throughout 2017.
+        </p>
+        <a href="/events/volunteer-orientation.html" class="button">learn more</a>
+      </div>
+      <div class="teaser-box__photo">
+        <img src="/assets/img/garden-pathx960.jpg" alt="photo of a paleo meal at Ellison Homestead">
+      </div>
+    </div>
+  </section>
 
-<h2>Who We Are</h2>
-<img src="http://placehold.it/900x600" alt="John and Sophie Ellison">
-
-<p>We're John and Sophie Ellison.</p>
-
-<hr>
-<br>
-
-<h2>What We Do</h2>
-<ul>
-  <img src="http://placehold.it/600x400" alt="retreats">
-  <h3>Retreats</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptate! Ea quae harum autem suscipit mollitia dolore placeat illo laboriosam blanditiis consectetur, debitis unde nostrum tempore, nam quasi dolorem sapiente!</p>
-  <ul>
-    <li><a href="{{ "/retreats/food-as-medicine/" | prepend: site.baseurl }}">Food as Medicine</a> &mdash; for people with MS and other autoimmune conditions</li>
-    <li><a href="{{ "/retreats/take-refuge/" | prepend: site.baseurl }}">Take Refuge</a> &mdash; for asylum seekers and their support workers</li>
-  </ul>
-
-  <br>
-
-  <img src="http://placehold.it/600x400" alt="bed and breakfasts">
-  <h3>Bed and Breakfasts</h3>
-  <p>
-    Come and stay on our homestead in a private straw bale home. Fresh organic eggs and goats milk provided each morning for breakfast! We're in a wonderful location, just 20 minutes from the historic city of Norwich.
-  </p>
-  <ul>
-    <li>Pickles Chalet</li>
-    <li>Bumbles Cottage</li>
-    <li>Swixley Cabin</li>
-    <li>Tiverton Lodge</li>
-  </ul>
-
-  <a href="javascript:void()" class="button">Reserve Your Stay...</a>
-
-  <hr>
-  <br>
-
-  <img src="http://placehold.it/600x400" alt="organic homesteading">
-  <h3>Organic Homesteading</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit odit soluta necessitatibus, eveniet consequuntur amet vero deserunt inventore molestiae, harum facilis earum, sit dolor cupiditate error accusamus reiciendis natus quo!</p>
-
-  <h4>Current Projects</h4>
-  <ul>
-    <li>Vegetables &amp; Herbs</li>
-    <li>Chickens</li>
-    <li>Waterfowl</li>
-    <li>Goats</li>
-    <li>Bees</li>
-  </ul>
-
-<hr>
-<br>
-
-<h2>Our Story</h2>
-<img src="http://placehold.it/900x600" alt="Meeting in a kibbutz in Israel">
-
-<p>
-  We met volunteering on a kibbutz in Israel in 2011. Since then we've been on adventures together all over the world. From starting grassroots recycling initiatives in Egypt to designing and building classrooms for children with special needs in India, our passions have propelled us and sometimes crippled us.
-</p>
-<p>
-  When Sophie caught Typhoid in India, we were frustrated because it put a hault on our plans for a long-term project. At the time, we neglected to consider the gravity of the illness and treated it like any old virus or flu. What we didn't know was that our naive approach would begin a three-year journey through chronic illness, into autoimmunity and horrible health.
-</p>
-<p>
-  As is often the case with conflict, we arrived at a perspective of redemption after a long trial of pain and hardship.
-</p>
-<a href="/our-story/">Read More...</a>
-
-<hr><br>
-
-<h2>Blog</h2>
-<ul class="post-list">
-  {% for post in site.posts limit:5 %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-  {% endfor %}
-</ul>
-
-<hr>
-<br>
-
-<h2>Get In Touch</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quam fuga amet repudiandae, dignissimos cupiditate accusantium earum, provident placeat magni esse, harum assumenda recusandae quidem doloribus sunt quis odio soluta.</p>
-<form action="#">
-  <label for="name">My name is
-  <br>
-  <input type="text" name="name"></label>
-  <br>
-  <label for="email">and my email is
-  <br>
-  <input type="email"></label>
-  <br>
-  <label for="message">I'd like to talk to you about
-  <br>
-  <textarea name="message" id=""></textarea></label>
-  <br>
-  <input type="submit">
-</form>
-<hr>
-<br>
+  <section class="homestead-projects">
+    <h2>Homestead Projects</h2>
+    <div class="row small-up-1 medium-up-2 large-up-3">
+      <div class="card--overlay column">
+        <a href="/blog.html">
+            <img src="/assets/img/chicken.jpg" alt="chickens">
+            <div class="card--overlay__caption">
+              <h3>Chickens</h3>
+            </div>
+        </a>
+      </div>
+      <div class="card--overlay column">
+        <a href="/blog.html">
+          <img src="/assets/img/goats.jpg" alt="goats">
+          <div class="card--overlay__caption">
+            <h3>Goats</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card--overlay column">
+        <a href="/blog.html">
+          <img src="/assets/img/vegetable-garden.jpg" alt="Vegetables">
+          <div class="card--overlay__caption">
+            <h3>Veg</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card--overlay column">
+        <a href="/blog.html">
+          <img src="/assets/img/ducklings.jpg" alt="Ducks">
+          <div class="card--overlay__caption">
+            <h3>Ducks</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card--overlay column">
+        <a href="/blog.html">
+          <img src="/assets/img/honey-comb.jpg" alt="honeybees">
+          <div class="card--overlay__caption">
+            <h3>Bees</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card--overlay column">
+        <a href="/blog.html">
+          <img src="/assets/img/fruitx600.jpg" alt="Fruit">
+          <div class="card--overlay__caption">
+            <h3>Fruit</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <h2>Blog</h2>
+    <div class="row">
+      <div class="medium-6 large-4 columns">
+        <div class="card">
+          <a href="/blog.html"><img src="/assets/img/incubating-chicksx600.jpg" alt="incubating fertilized chicken eggs" class="card__image"></a>
+          <footer class="card__footer">
+            <a href="/blog.html"><h1>Incubating Chicken Eggs</h1></a>
+            <p class="card__published">
+              <a href="/blog.html">John Ellison</a> &mdash;
+              <time pubdate datetime="2016-09-09T12:00">9 September, 2016</time>
+            </p>
+            <a href="/blog.html" class="card__excerpt"><p>In this case its definitely the egg before the chicken...</p></a>
+          </footer>
+        </div>
+      </div>
+      <div class="medium-6 large-4 columns">
+        <div class="card">
+          <a href="/blog.html"><img src="/assets/img/countrysidex600.jpg" alt="looking for land" class="card__image"></a>
+          <footer class="card__footer">
+            <a href="/blog.html"><h1>Our Search for Land &amp; Home</h1></a>
+            <p class="card__published">
+              <a href="/blog.html">John Ellison</a> &mdash;
+              <time pubdate datetime="2016-09-12T12:00">12 September, 2016</time>
+            </p>
+            <a href="/blog.html" class="card__excerpt"><p>After years of dreaming, we finally started looking for land...</p></a>
+          </footer>
+        </div>
+      </div>
+      <div class="medium-6 large-4 columns end">
+        <div class="card">
+          <a href="/blog.html"><img src="/assets/img/picking-blackberriesx600.jpg" alt="foraging blackberries in Norfolk" class="card__image"></a>
+          <footer class="card__footer">
+            <a href="/blog.html"><h1>Foraging Blackberries</h1></a>
+            <p class="card__published">
+              <a href="/blog.html">John Ellison</a> &mdash;
+              <time pubdate datetime="2016-09-15T12:00">15 September, 2016</time>
+            </p>
+            <a href="/blog.html" class="card__excerpt"><p>We geared up and headed out to forage for this summer's blackberries...</p></a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta__wrapper">
+    <div class="cta">
+      <div class="cta__content">
+          <div class="cta__header row medium-10 medium-centered large-7  columns">
+            <h2>Sign Up To Our Monthly Newsletter</h2>
+            <h4 class="subheader">
+              Receive notifications about upcoming events and a quick summary about the latest at Ellison Homestead in your inbox.
+            </h4>
+          </div>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLScfKYJ-iq0quNddo9A6VjG3fVEAoX222_KOE0EN6-9DJnbEMg/formResponse" class="cta__form row small-11 medium-8 large-5 columns">
+            <div class="row">
+                <div class="input-group">
+                  <input class="input-group-field" type="email" placeholder="myemail@address.com" name="entry.1980028142">
+                  <div class="input-group-button">
+                    <input type="submit" class="button" value="sign up">
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
