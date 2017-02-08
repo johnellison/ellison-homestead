@@ -6,4 +6,6 @@ Image:
   Caption: An image representing our journey
 ---
 
+content
+
 ![railway-journey.jpg](/uploads/railway-journey.jpg)
