@@ -40,4 +40,4 @@ baseurl: ''
 permalink: pretty
 gems:
 - jekyll-sitemap
--
+- 
