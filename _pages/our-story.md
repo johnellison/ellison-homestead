@@ -2,7 +2,7 @@
 title: Our Story
 permalink: "/our-story/"
 Image:
-  File: "/uploads/railway-journey-dae28e.jpg"
+  File: "/uploads/railway-journey.jpg"
   Caption: An image representing our journey
 ---
 
